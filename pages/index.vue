@@ -9,30 +9,27 @@
       sm8
       md6
     >
-    <v-container fluid>
-      <v-row dense>
-        <v-col
-          v-for='anime in animes'
-          :key='anime.id'
-          lg='3'
-          md='6'
-          xs='12'
-        >
-          <anime-card
-            class='ma-3'
-            :id='anime.id'
-            :name='anime.name'
-            :number='anime.number'
-            :type='anime.type'
-            :image='anime.image'
-            :link='anime.link'
+      <v-container fluid>
+        <v-row dense>
+          <v-col
+            v-for="anime in animes"
+            :key="anime.id"
+            lg="3"
+            md="6"
+            xs="12"
           >
-
-          </anime-card>
-        </v-col>
-
-      </v-row>
-    </v-container>
+            <anime-card
+              :id="anime.id"
+              :name="anime.name"
+              :number="anime.number"
+              :type="anime.type"
+              :image="anime.image"
+              :link="anime.link"
+              class="ma-3"
+            />
+          </v-col>
+        </v-row>
+      </v-container>
     </v-flex>
   </v-layout>
 </template>
@@ -57,17 +54,17 @@ export default {
           link: 'naruto'
         },
         {
-          id:2,
+          id: 2,
           name: 'afro samurai',
-          number: null,
+          number: 2,
           type: 'pelicula',
           image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
           link: 'afro-samurai'
         },
         {
-          id:3,
+          id: 3,
           name: 'afro samurai',
-          number: null,
+          number: 3,
           type: 'pelicula',
           image: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'
         }
